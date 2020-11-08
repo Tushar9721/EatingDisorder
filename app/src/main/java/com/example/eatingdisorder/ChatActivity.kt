@@ -52,7 +52,7 @@ class ChatActivity : AppCompatActivity() {
                 Snackbar.make(btn_send, "Please type the message!!", Snackbar.LENGTH_SHORT).show()
             } else {
                 message(et_message.text.toString(), true)
-                et_message.setText(" ")
+                et_message.setText("")
             }
 
         }
