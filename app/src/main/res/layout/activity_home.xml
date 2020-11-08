@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E4E8">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="true"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="What is Eating Disorder ?"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Eating Disorders describe illnesses that are characterized by irregular eating habits and severe distress or concern about body weight or shape. Eating disorders are serious conditions related to persistent eating behaviors that negatively impact your health, your emotions and your ability to function in important areas of life. The most common eating disorders are anorexia nervosa, bulimia nervosa and binge-eating disorder. EDs are serious but treatable mental illnesses that can affect anyone regardless of gender, age, racial and ethnic identity, sexual orientation or socio-economic background."
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Quick Questionnaire"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Start your quick questionare"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/startQuestionnaire"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:text="Start"
+                            android:textColor="#66C1EA"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Count your Calories"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvGender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Gender: "
+                                android:textColor="@color/black" />
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_toEndOf="@+id/tvGender"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioBtn1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#DA960F"
+                                    android:checked="true"
+                                    android:text="Male"
+                                    android:textColor="@color/black" />
+
+                                <RadioButton
+                                    android:id="@+id/radioBtn2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#DA960F"
+                                    android:text="Female"
+                                    android:textColor="@color/black" />
+
+                                <RadioButton
+                                    android:id="@+id/radioBtn3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#DA960F"
+                                    android:text="Not Defined"
+                                    android:textColor="@color/black" />
+                            </RadioGroup>
+
+
+                            <TextView
+                                android:id="@+id/tvAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvGender"
+                                android:layout_marginTop="8dp"
+                                android:padding="10dp"
+                                android:text="Age in years: "
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/edAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvGender"
+                                android:layout_marginTop="8dp"
+                                android:layout_toEndOf="@+id/tvAge"
+                                android:background="@drawable/number_background"
+                                android:hint="22"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:padding="6dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="#5A5A5A"
+                                android:textCursorDrawable="@drawable/text_cursor" />
+
+                            <TextView
+                                android:id="@+id/tvWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvAge"
+                                android:layout_marginTop="8dp"
+                                android:padding="10dp"
+                                android:text="Weight in lbs: "
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/edWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvAge"
+                                android:layout_marginTop="8dp"
+                                android:layout_toEndOf="@+id/tvWeight"
+                                android:background="@drawable/number_background"
+                                android:hint="130.5"
+                                android:inputType="numberDecimal"
+                                android:maxLength="5"
+                                android:padding="6dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="#5A5A5A"
+                                android:textCursorDrawable="@drawable/text_cursor" />
+
+                            <TextView
+                                android:id="@+id/tvHeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvWeight"
+                                android:layout_marginTop="8dp"
+                                android:padding="10dp"
+                                android:text="Height in Inches: "
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/edHeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvWeight"
+                                android:layout_marginTop="8dp"
+                                android:layout_toEndOf="@+id/tvHeight"
+                                android:background="@drawable/number_background"
+                                android:hint="170"
+                                android:inputType="numberDecimal"
+                                android:maxLength="5"
+                                android:padding="6dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="#5A5A5A"
+                                android:textCursorDrawable="@drawable/text_cursor" />
+
+                            <TextView
+                                android:id="@+id/tvSelection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvHeight"
+                                android:padding="10dp"
+                                android:text="Activity factor: "
+                                android:textColor="@color/black" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvHeight"
+                                android:layout_marginTop="8dp"
+                                android:layout_toEndOf="@+id/tvSelection"
+                                android:background="#808080"
+                                android:ellipsize="marquee" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/calculate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="80dp"
+                            android:background="@drawable/text_background"
+                            android:padding="10dp"
+                            android:text="Calculate"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#FAFAFA"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCalculateCalories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#008325"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Awareness"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="There are many misconceptions about Eating Disorder held by the public as well as health professionals working with those who may be affected by eating disorder. It is important to know what type of eating disorder a person has so that can be treated accordingly."
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/awarenessReadMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:text="Read more.."
+                            android:textColor="#66C1EA"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Prevention"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Prevention efforts may involve reducing negative risk factors, like body dissatisfaction, depression, or basing self-esteem on appearance, or increasing protective factors, like a non-appearance-oriented self-definition and replacing dieting and body snarking with intuitive eating and appreciation for the body’s functionality. "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/preventionReadMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:text="Read more.."
+                            android:textColor="#66C1EA"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Treatment"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Eating disorder treatment depends on your particular disorder and your symptoms. It typically includes a combination of psychological therapy (psychotherapy), nutrition education, medical monitoring and sometimes medications."
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/treatmentReadMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:text="Read more.."
+                            android:textColor="#66C1EA"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/textChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/callButton"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/chatButton"
+        android:background="@drawable/text_background"
+        android:padding="5dp"
+        android:text="Chat with Consultant"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/callButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_twotone_chat_bubble_24"
+        android:visibility="invisible"
+        app:elevation="10dp"
+        app:fabCustomSize="60dp"
+        app:pressedTranslationZ="12dp" />
+
+    <TextView
+        android:id="@+id/textCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/headButton"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@+id/callButton"
+        android:background="@drawable/text_background"
+        android:padding="5dp"
+        android:text="Emergency Call"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/headButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_twotone_call_24"
+        android:visibility="invisible"
+        app:elevation="10dp"
+        app:fabCustomSize="60dp"
+        app:pressedTranslationZ="12dp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/headButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
+
+</RelativeLayout>

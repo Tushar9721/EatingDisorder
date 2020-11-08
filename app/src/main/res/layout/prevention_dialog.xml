@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/prevention"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_margin="30dp"
+        android:padding="20px"
+        android:src="@drawable/cancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:text="Prevention"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold |italic" />
+
+
+    <TextView
+        android:id="@+id/preventTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scrollbars = "vertical"
+        android:text="Some tips:
+\n\n1.	Get rid of the notion that a particular diet, weight or body size will automatically lead to happiness and fulfillment.
+\n\n2.	Learn everything you can about anorexia nervosa, bulimia nervosa, binge eating disorder and other types of eating disorders. Genuine awareness will help you avoid judgmental or mistaken attitudes about food, weight, body shape and eating disorders. This will also help you to learn the signs of potential eating disorders so you can spot a problem early and pursue treatment.
+\n\n3.	Make the choice to challenge the false ideas that thinness and weight loss are great, and that body fat and weight gain are horrible or indicate laziness, worthlessness, or immorality. It may be helpful to enter therapy or counseling to look at the root of those thoughts and why you have them. Cognitive behavioral therapy can be beneficial because it helps to take negative thoughts to reframe them more positively.
+\n\n4.	Avoid categorizing foods as “good/safe” vs. “bad/dangerous.” Remember that we all need to eat a balanced variety of foods. A healthy diet should focus on whole foods (such as produce, lean meats, low-fat dairy, nuts and legumes) but allows room to enjoy all kinds of food in moderation.
+\n\n5.	Stop judging others and youself based on body weight or shape. Turn off the voices in your head that tell you that a person’s body weight is an indicator of their character, personality, or value as a person. Again, this is another area where therapy can have a positive outcome."
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
