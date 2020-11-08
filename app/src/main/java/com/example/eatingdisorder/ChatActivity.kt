@@ -64,7 +64,6 @@ class ChatActivity : AppCompatActivity() {
     }
 
     private fun addingData() {
-        message("Hello! we are here to help you and come out of disorder.", false)
-        message("Hello! Yes its really disturbing.", true)
+        message("Hello! I am here to help you", false)
     }
 }
